@@ -8,5 +8,15 @@ namespace Multi_Binary.Converters
 {
     class Sept
     {
+       
+        public char lastmem(string Y)
+        {
+
+            char[] _y = Y.ToCharArray();
+
+            char y = _y.Last();
+            return y;
+        }
+
     }
 }

@@ -39,6 +39,7 @@ namespace Multi_Binary.Admins
             arr = result.ToCharArray();
             Array.Reverse(arr);
             str = new string(arr);
+
             return str;
         }   
 

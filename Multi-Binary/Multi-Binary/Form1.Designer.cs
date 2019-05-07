@@ -39,30 +39,30 @@
             this.r1c4 = new System.Windows.Forms.TextBox();
             this.r1c5 = new System.Windows.Forms.TextBox();
             this.r1c6 = new System.Windows.Forms.TextBox();
-            this.r2c1 = new System.Windows.Forms.RichTextBox();
-            this.r2c6 = new System.Windows.Forms.RichTextBox();
-            this.r2c5 = new System.Windows.Forms.RichTextBox();
-            this.r2c4 = new System.Windows.Forms.RichTextBox();
-            this.r2c3 = new System.Windows.Forms.RichTextBox();
-            this.r2c2 = new System.Windows.Forms.RichTextBox();
-            this.r3c2 = new System.Windows.Forms.RichTextBox();
-            this.r3c3 = new System.Windows.Forms.RichTextBox();
-            this.r3c4 = new System.Windows.Forms.RichTextBox();
-            this.r3c5 = new System.Windows.Forms.RichTextBox();
-            this.r3c6 = new System.Windows.Forms.RichTextBox();
-            this.r3c1 = new System.Windows.Forms.RichTextBox();
-            this.r4c2 = new System.Windows.Forms.RichTextBox();
-            this.r4c3 = new System.Windows.Forms.RichTextBox();
-            this.r4c4 = new System.Windows.Forms.RichTextBox();
-            this.r4c5 = new System.Windows.Forms.RichTextBox();
-            this.r4c6 = new System.Windows.Forms.RichTextBox();
-            this.r4c1 = new System.Windows.Forms.RichTextBox();
-            this.r5c2 = new System.Windows.Forms.RichTextBox();
-            this.r5c3 = new System.Windows.Forms.RichTextBox();
-            this.r5c4 = new System.Windows.Forms.RichTextBox();
-            this.r5c5 = new System.Windows.Forms.RichTextBox();
-            this.r5c6 = new System.Windows.Forms.RichTextBox();
-            this.r5c1 = new System.Windows.Forms.RichTextBox();
+            this.a1 = new System.Windows.Forms.RichTextBox();
+            this.a6 = new System.Windows.Forms.RichTextBox();
+            this.a5 = new System.Windows.Forms.RichTextBox();
+            this.a4 = new System.Windows.Forms.RichTextBox();
+            this.a3 = new System.Windows.Forms.RichTextBox();
+            this.a2 = new System.Windows.Forms.RichTextBox();
+            this.b2 = new System.Windows.Forms.RichTextBox();
+            this.b3 = new System.Windows.Forms.RichTextBox();
+            this.b4 = new System.Windows.Forms.RichTextBox();
+            this.b5 = new System.Windows.Forms.RichTextBox();
+            this.b6 = new System.Windows.Forms.RichTextBox();
+            this.b1 = new System.Windows.Forms.RichTextBox();
+            this.c2 = new System.Windows.Forms.RichTextBox();
+            this.c3 = new System.Windows.Forms.RichTextBox();
+            this.c4 = new System.Windows.Forms.RichTextBox();
+            this.c5 = new System.Windows.Forms.RichTextBox();
+            this.c6 = new System.Windows.Forms.RichTextBox();
+            this.c1 = new System.Windows.Forms.RichTextBox();
+            this.d2 = new System.Windows.Forms.RichTextBox();
+            this.d3 = new System.Windows.Forms.RichTextBox();
+            this.d4 = new System.Windows.Forms.RichTextBox();
+            this.d5 = new System.Windows.Forms.RichTextBox();
+            this.d6 = new System.Windows.Forms.RichTextBox();
+            this.d1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -149,227 +149,228 @@
             this.r1c6.Size = new System.Drawing.Size(73, 20);
             this.r1c6.TabIndex = 30;
             // 
-            // r2c1
+            // a1
             // 
-            this.r2c1.Location = new System.Drawing.Point(154, 99);
-            this.r2c1.Name = "r2c1";
-            this.r2c1.Size = new System.Drawing.Size(72, 38);
-            this.r2c1.TabIndex = 31;
-            this.r2c1.Text = "";
+            this.a1.Location = new System.Drawing.Point(154, 99);
+            this.a1.Name = "a1";
+            this.a1.Size = new System.Drawing.Size(72, 38);
+            this.a1.TabIndex = 31;
+            this.a1.Text = "";
             // 
-            // r2c6
+            // a6
             // 
-            this.r2c6.Location = new System.Drawing.Point(548, 99);
-            this.r2c6.Name = "r2c6";
-            this.r2c6.Size = new System.Drawing.Size(72, 38);
-            this.r2c6.TabIndex = 32;
-            this.r2c6.Text = "";
+            this.a6.Location = new System.Drawing.Point(548, 99);
+            this.a6.Name = "a6";
+            this.a6.Size = new System.Drawing.Size(72, 38);
+            this.a6.TabIndex = 32;
+            this.a6.Text = "";
             // 
-            // r2c5
+            // a5
             // 
-            this.r2c5.Location = new System.Drawing.Point(470, 98);
-            this.r2c5.Name = "r2c5";
-            this.r2c5.Size = new System.Drawing.Size(72, 38);
-            this.r2c5.TabIndex = 33;
-            this.r2c5.Text = "";
+            this.a5.Location = new System.Drawing.Point(470, 98);
+            this.a5.Name = "a5";
+            this.a5.Size = new System.Drawing.Size(72, 38);
+            this.a5.TabIndex = 33;
+            this.a5.Text = "";
             // 
-            // r2c4
+            // a4
             // 
-            this.r2c4.Location = new System.Drawing.Point(390, 99);
-            this.r2c4.Name = "r2c4";
-            this.r2c4.Size = new System.Drawing.Size(72, 38);
-            this.r2c4.TabIndex = 34;
-            this.r2c4.Text = "";
+            this.a4.Location = new System.Drawing.Point(390, 99);
+            this.a4.Name = "a4";
+            this.a4.Size = new System.Drawing.Size(72, 38);
+            this.a4.TabIndex = 34;
+            this.a4.Text = "";
             // 
-            // r2c3
+            // a3
             // 
-            this.r2c3.Location = new System.Drawing.Point(312, 99);
-            this.r2c3.Name = "r2c3";
-            this.r2c3.Size = new System.Drawing.Size(72, 38);
-            this.r2c3.TabIndex = 35;
-            this.r2c3.Text = "";
+            this.a3.Location = new System.Drawing.Point(312, 99);
+            this.a3.Name = "a3";
+            this.a3.Size = new System.Drawing.Size(72, 38);
+            this.a3.TabIndex = 35;
+            this.a3.Text = "";
             // 
-            // r2c2
+            // a2
             // 
-            this.r2c2.Location = new System.Drawing.Point(233, 98);
-            this.r2c2.Name = "r2c2";
-            this.r2c2.Size = new System.Drawing.Size(72, 38);
-            this.r2c2.TabIndex = 36;
-            this.r2c2.Text = "";
+            this.a2.Location = new System.Drawing.Point(233, 98);
+            this.a2.Name = "a2";
+            this.a2.Size = new System.Drawing.Size(72, 38);
+            this.a2.TabIndex = 36;
+            this.a2.Text = "";
             // 
-            // r3c2
+            // b2
             // 
-            this.r3c2.Location = new System.Drawing.Point(233, 142);
-            this.r3c2.Name = "r3c2";
-            this.r3c2.Size = new System.Drawing.Size(72, 38);
-            this.r3c2.TabIndex = 42;
-            this.r3c2.Text = "";
+            this.b2.Location = new System.Drawing.Point(233, 142);
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(72, 38);
+            this.b2.TabIndex = 42;
+            this.b2.Text = "";
             // 
-            // r3c3
+            // b3
             // 
-            this.r3c3.Location = new System.Drawing.Point(312, 143);
-            this.r3c3.Name = "r3c3";
-            this.r3c3.Size = new System.Drawing.Size(72, 38);
-            this.r3c3.TabIndex = 41;
-            this.r3c3.Text = "";
+            this.b3.Location = new System.Drawing.Point(312, 143);
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(72, 38);
+            this.b3.TabIndex = 41;
+            this.b3.Text = "";
             // 
-            // r3c4
+            // b4
             // 
-            this.r3c4.Location = new System.Drawing.Point(390, 143);
-            this.r3c4.Name = "r3c4";
-            this.r3c4.Size = new System.Drawing.Size(72, 38);
-            this.r3c4.TabIndex = 40;
-            this.r3c4.Text = "";
+            this.b4.Location = new System.Drawing.Point(390, 143);
+            this.b4.Name = "b4";
+            this.b4.Size = new System.Drawing.Size(72, 38);
+            this.b4.TabIndex = 40;
+            this.b4.Text = "";
             // 
-            // r3c5
+            // b5
             // 
-            this.r3c5.Location = new System.Drawing.Point(470, 142);
-            this.r3c5.Name = "r3c5";
-            this.r3c5.Size = new System.Drawing.Size(72, 38);
-            this.r3c5.TabIndex = 39;
-            this.r3c5.Text = "";
+            this.b5.Location = new System.Drawing.Point(470, 142);
+            this.b5.Name = "b5";
+            this.b5.Size = new System.Drawing.Size(72, 38);
+            this.b5.TabIndex = 39;
+            this.b5.Text = "";
             // 
-            // r3c6
+            // b6
             // 
-            this.r3c6.Location = new System.Drawing.Point(548, 143);
-            this.r3c6.Name = "r3c6";
-            this.r3c6.Size = new System.Drawing.Size(72, 38);
-            this.r3c6.TabIndex = 38;
-            this.r3c6.Text = "";
+            this.b6.Location = new System.Drawing.Point(548, 143);
+            this.b6.Name = "b6";
+            this.b6.Size = new System.Drawing.Size(72, 38);
+            this.b6.TabIndex = 38;
+            this.b6.Text = "";
             // 
-            // r3c1
+            // b1
             // 
-            this.r3c1.Location = new System.Drawing.Point(154, 143);
-            this.r3c1.Name = "r3c1";
-            this.r3c1.Size = new System.Drawing.Size(72, 38);
-            this.r3c1.TabIndex = 37;
-            this.r3c1.Text = "";
+            this.b1.Location = new System.Drawing.Point(154, 143);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(72, 38);
+            this.b1.TabIndex = 37;
+            this.b1.Text = "";
             // 
-            // r4c2
+            // c2
             // 
-            this.r4c2.Location = new System.Drawing.Point(233, 186);
-            this.r4c2.Name = "r4c2";
-            this.r4c2.Size = new System.Drawing.Size(72, 38);
-            this.r4c2.TabIndex = 48;
-            this.r4c2.Text = "";
+            this.c2.Location = new System.Drawing.Point(233, 186);
+            this.c2.Name = "c2";
+            this.c2.Size = new System.Drawing.Size(72, 38);
+            this.c2.TabIndex = 48;
+            this.c2.Text = "";
             // 
-            // r4c3
+            // c3
             // 
-            this.r4c3.Location = new System.Drawing.Point(312, 187);
-            this.r4c3.Name = "r4c3";
-            this.r4c3.Size = new System.Drawing.Size(72, 38);
-            this.r4c3.TabIndex = 47;
-            this.r4c3.Text = "";
+            this.c3.Location = new System.Drawing.Point(312, 187);
+            this.c3.Name = "c3";
+            this.c3.Size = new System.Drawing.Size(72, 38);
+            this.c3.TabIndex = 47;
+            this.c3.Text = "";
             // 
-            // r4c4
+            // c4
             // 
-            this.r4c4.Location = new System.Drawing.Point(390, 187);
-            this.r4c4.Name = "r4c4";
-            this.r4c4.Size = new System.Drawing.Size(72, 38);
-            this.r4c4.TabIndex = 46;
-            this.r4c4.Text = "";
+            this.c4.Location = new System.Drawing.Point(390, 187);
+            this.c4.Name = "c4";
+            this.c4.Size = new System.Drawing.Size(72, 38);
+            this.c4.TabIndex = 46;
+            this.c4.Text = "";
             // 
-            // r4c5
+            // c5
             // 
-            this.r4c5.Location = new System.Drawing.Point(470, 186);
-            this.r4c5.Name = "r4c5";
-            this.r4c5.Size = new System.Drawing.Size(72, 38);
-            this.r4c5.TabIndex = 45;
-            this.r4c5.Text = "";
+            this.c5.Location = new System.Drawing.Point(470, 186);
+            this.c5.Name = "c5";
+            this.c5.Size = new System.Drawing.Size(72, 38);
+            this.c5.TabIndex = 45;
+            this.c5.Text = "";
             // 
-            // r4c6
+            // c6
             // 
-            this.r4c6.Location = new System.Drawing.Point(548, 187);
-            this.r4c6.Name = "r4c6";
-            this.r4c6.Size = new System.Drawing.Size(72, 38);
-            this.r4c6.TabIndex = 44;
-            this.r4c6.Text = "";
+            this.c6.Location = new System.Drawing.Point(548, 187);
+            this.c6.Name = "c6";
+            this.c6.Size = new System.Drawing.Size(72, 38);
+            this.c6.TabIndex = 44;
+            this.c6.Text = "";
             // 
-            // r4c1
+            // c1
             // 
-            this.r4c1.Location = new System.Drawing.Point(154, 187);
-            this.r4c1.Name = "r4c1";
-            this.r4c1.Size = new System.Drawing.Size(72, 38);
-            this.r4c1.TabIndex = 43;
-            this.r4c1.Text = "";
+            this.c1.Location = new System.Drawing.Point(154, 187);
+            this.c1.Name = "c1";
+            this.c1.Size = new System.Drawing.Size(72, 38);
+            this.c1.TabIndex = 43;
+            this.c1.Text = "";
             // 
-            // r5c2
+            // d2
             // 
-            this.r5c2.Location = new System.Drawing.Point(233, 230);
-            this.r5c2.Name = "r5c2";
-            this.r5c2.Size = new System.Drawing.Size(72, 38);
-            this.r5c2.TabIndex = 54;
-            this.r5c2.Text = "";
+            this.d2.Location = new System.Drawing.Point(233, 230);
+            this.d2.Name = "d2";
+            this.d2.Size = new System.Drawing.Size(72, 38);
+            this.d2.TabIndex = 54;
+            this.d2.Text = "";
             // 
-            // r5c3
+            // d3
             // 
-            this.r5c3.Location = new System.Drawing.Point(312, 231);
-            this.r5c3.Name = "r5c3";
-            this.r5c3.Size = new System.Drawing.Size(72, 38);
-            this.r5c3.TabIndex = 53;
-            this.r5c3.Text = "";
+            this.d3.Location = new System.Drawing.Point(312, 231);
+            this.d3.Name = "d3";
+            this.d3.Size = new System.Drawing.Size(72, 38);
+            this.d3.TabIndex = 53;
+            this.d3.Text = "";
+            this.d3.TextChanged += new System.EventHandler(this.r5c3_TextChanged);
             // 
-            // r5c4
+            // d4
             // 
-            this.r5c4.Location = new System.Drawing.Point(390, 231);
-            this.r5c4.Name = "r5c4";
-            this.r5c4.Size = new System.Drawing.Size(72, 38);
-            this.r5c4.TabIndex = 52;
-            this.r5c4.Text = "";
+            this.d4.Location = new System.Drawing.Point(390, 231);
+            this.d4.Name = "d4";
+            this.d4.Size = new System.Drawing.Size(72, 38);
+            this.d4.TabIndex = 52;
+            this.d4.Text = "";
             // 
-            // r5c5
+            // d5
             // 
-            this.r5c5.Location = new System.Drawing.Point(470, 230);
-            this.r5c5.Name = "r5c5";
-            this.r5c5.Size = new System.Drawing.Size(72, 38);
-            this.r5c5.TabIndex = 51;
-            this.r5c5.Text = "";
+            this.d5.Location = new System.Drawing.Point(470, 230);
+            this.d5.Name = "d5";
+            this.d5.Size = new System.Drawing.Size(72, 38);
+            this.d5.TabIndex = 51;
+            this.d5.Text = "";
             // 
-            // r5c6
+            // d6
             // 
-            this.r5c6.Location = new System.Drawing.Point(548, 231);
-            this.r5c6.Name = "r5c6";
-            this.r5c6.Size = new System.Drawing.Size(72, 38);
-            this.r5c6.TabIndex = 50;
-            this.r5c6.Text = "";
+            this.d6.Location = new System.Drawing.Point(548, 231);
+            this.d6.Name = "d6";
+            this.d6.Size = new System.Drawing.Size(72, 38);
+            this.d6.TabIndex = 50;
+            this.d6.Text = "";
             // 
-            // r5c1
+            // d1
             // 
-            this.r5c1.Location = new System.Drawing.Point(154, 231);
-            this.r5c1.Name = "r5c1";
-            this.r5c1.Size = new System.Drawing.Size(72, 38);
-            this.r5c1.TabIndex = 49;
-            this.r5c1.Text = "";
+            this.d1.Location = new System.Drawing.Point(154, 231);
+            this.d1.Name = "d1";
+            this.d1.Size = new System.Drawing.Size(72, 38);
+            this.d1.TabIndex = 49;
+            this.d1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 340);
-            this.Controls.Add(this.r5c2);
-            this.Controls.Add(this.r5c3);
-            this.Controls.Add(this.r5c4);
-            this.Controls.Add(this.r5c5);
-            this.Controls.Add(this.r5c6);
-            this.Controls.Add(this.r5c1);
-            this.Controls.Add(this.r4c2);
-            this.Controls.Add(this.r4c3);
-            this.Controls.Add(this.r4c4);
-            this.Controls.Add(this.r4c5);
-            this.Controls.Add(this.r4c6);
-            this.Controls.Add(this.r4c1);
-            this.Controls.Add(this.r3c2);
-            this.Controls.Add(this.r3c3);
-            this.Controls.Add(this.r3c4);
-            this.Controls.Add(this.r3c5);
-            this.Controls.Add(this.r3c6);
-            this.Controls.Add(this.r3c1);
-            this.Controls.Add(this.r2c2);
-            this.Controls.Add(this.r2c3);
-            this.Controls.Add(this.r2c4);
-            this.Controls.Add(this.r2c5);
-            this.Controls.Add(this.r2c6);
-            this.Controls.Add(this.r2c1);
+            this.Controls.Add(this.d2);
+            this.Controls.Add(this.d3);
+            this.Controls.Add(this.d4);
+            this.Controls.Add(this.d5);
+            this.Controls.Add(this.d6);
+            this.Controls.Add(this.d1);
+            this.Controls.Add(this.c2);
+            this.Controls.Add(this.c3);
+            this.Controls.Add(this.c4);
+            this.Controls.Add(this.c5);
+            this.Controls.Add(this.c6);
+            this.Controls.Add(this.c1);
+            this.Controls.Add(this.b2);
+            this.Controls.Add(this.b3);
+            this.Controls.Add(this.b4);
+            this.Controls.Add(this.b5);
+            this.Controls.Add(this.b6);
+            this.Controls.Add(this.b1);
+            this.Controls.Add(this.a2);
+            this.Controls.Add(this.a3);
+            this.Controls.Add(this.a4);
+            this.Controls.Add(this.a5);
+            this.Controls.Add(this.a6);
+            this.Controls.Add(this.a1);
             this.Controls.Add(this.r1c6);
             this.Controls.Add(this.r1c5);
             this.Controls.Add(this.r1c4);
@@ -401,30 +402,30 @@
         private System.Windows.Forms.TextBox r1c4;
         private System.Windows.Forms.TextBox r1c5;
         private System.Windows.Forms.TextBox r1c6;
-        private System.Windows.Forms.RichTextBox r2c1;
-        private System.Windows.Forms.RichTextBox r2c6;
-        private System.Windows.Forms.RichTextBox r2c5;
-        private System.Windows.Forms.RichTextBox r2c4;
-        private System.Windows.Forms.RichTextBox r2c3;
-        private System.Windows.Forms.RichTextBox r2c2;
-        private System.Windows.Forms.RichTextBox r3c2;
-        private System.Windows.Forms.RichTextBox r3c3;
-        private System.Windows.Forms.RichTextBox r3c4;
-        private System.Windows.Forms.RichTextBox r3c5;
-        private System.Windows.Forms.RichTextBox r3c6;
-        private System.Windows.Forms.RichTextBox r3c1;
-        private System.Windows.Forms.RichTextBox r4c2;
-        private System.Windows.Forms.RichTextBox r4c3;
-        private System.Windows.Forms.RichTextBox r4c4;
-        private System.Windows.Forms.RichTextBox r4c5;
-        private System.Windows.Forms.RichTextBox r4c6;
-        private System.Windows.Forms.RichTextBox r4c1;
-        private System.Windows.Forms.RichTextBox r5c2;
-        private System.Windows.Forms.RichTextBox r5c3;
-        private System.Windows.Forms.RichTextBox r5c4;
-        private System.Windows.Forms.RichTextBox r5c5;
-        private System.Windows.Forms.RichTextBox r5c6;
-        private System.Windows.Forms.RichTextBox r5c1;
+        private System.Windows.Forms.RichTextBox a1;
+        private System.Windows.Forms.RichTextBox a6;
+        private System.Windows.Forms.RichTextBox a5;
+        private System.Windows.Forms.RichTextBox a4;
+        private System.Windows.Forms.RichTextBox a3;
+        private System.Windows.Forms.RichTextBox a2;
+        private System.Windows.Forms.RichTextBox b2;
+        private System.Windows.Forms.RichTextBox b3;
+        private System.Windows.Forms.RichTextBox b4;
+        private System.Windows.Forms.RichTextBox b5;
+        private System.Windows.Forms.RichTextBox b6;
+        private System.Windows.Forms.RichTextBox b1;
+        private System.Windows.Forms.RichTextBox c2;
+        private System.Windows.Forms.RichTextBox c3;
+        private System.Windows.Forms.RichTextBox c4;
+        private System.Windows.Forms.RichTextBox c5;
+        private System.Windows.Forms.RichTextBox c6;
+        private System.Windows.Forms.RichTextBox c1;
+        private System.Windows.Forms.RichTextBox d2;
+        private System.Windows.Forms.RichTextBox d3;
+        private System.Windows.Forms.RichTextBox d4;
+        private System.Windows.Forms.RichTextBox d5;
+        private System.Windows.Forms.RichTextBox d6;
+        private System.Windows.Forms.RichTextBox d1;
     }
 }
 

@@ -64,6 +64,28 @@ namespace Multi_Binary.Admins
                 }
             }
         }
+        /*
+        public string get_Q
+        {                       
+            // allows writer to get  _Q
+            get { return _Q; }
+        }
+
+        public string get_M
+        {
+            // allows writer to get  _M
+            get { return _M; }
+        }
+        */
+
+
+
+
+
+
+
+
+
 
 
 

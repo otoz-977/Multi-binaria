@@ -51,6 +51,7 @@
     <Compile Include="Converters\Add-Sub.cs" />
     <Compile Include="Converters\scootch.cs" />
     <Compile Include="Converters\Sept.cs" />
+    <Compile Include="Converters\Writer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
