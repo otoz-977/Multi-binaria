@@ -55,34 +55,71 @@ namespace Multi_Binary
 
 
 
-            //separar a Q
-           string temp = w.separate(Q).ToString();
-           
-            if(temp == Q1)
+
+            for(int i = 1; i <=4;i++ )
             {
-               //nothing
-            }
-            else
-            {
-                if(temp == "1")
+                //separar a Q
+                string temp = w.separate(Q).ToString();
+
+                TextBox txtBox = (TextBox)this.Controls.Find("c"+i*4, true)[0];
+                txtBox.Text = temp;
+                if (temp == Q1)
                 {
-                    //restando
-                    M= b.Comp2(M);
-                    A=w.adding(M, A);
+                    //nothing
                 }
                 else
                 {
-                    //sumando
-                    A= w.adding(M, A);
+                    if (temp == "1")
+                    {
+                        //restando
+
+                        M = b.Comp2(M);
+                        A = w.adding(M, A);
+
+                    }
+                    else
+                    {
+                        //sumando
+
+                         A = w.adding(M, A);
+
+                    }
                 }
+                char timp = w.separate(A);
+                string Am = w.slide(A, '0');
+
+
+                char qone = w.separate(Q);
+                string Qm = w.slide(A, timp);
+
+                Q1 = qone.ToString();
+
             }
-            char timp =w.separate(A);
-            w.slide(A, '0');
+          
 
-            char qone =w.separate(Q);
-            w.slide(A, timp);
 
-            Q1 = qone.ToString();
+            //c1.Text = A;
+            //c1.Text += " \n";
+            //w.slide(A, '0');
+           // c1.Text = A;
+
+
+
+
+
+
+
+            /*
+            string filename = @"C:\\Users\\user\\Source\\Repos\\Multi-binaria\\Multi-Binary\\Multi-Binary\\bin\\Table.txt";
+
+            List<string> lines = new List<string>();
+            lines.Add(A);
+            lines.Add(Q);
+            lines.Add(Q1);
+            lines.Add(M);
+           */
+            
+
 
 
 
@@ -105,9 +142,9 @@ namespace Multi_Binary
 
             }
             */
-           
-            
-             
+
+
+
 
 
 

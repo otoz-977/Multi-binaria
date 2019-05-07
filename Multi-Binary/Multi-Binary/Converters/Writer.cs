@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Multi_Binary.Admins;
 using Multi_Binary.Converters;
+using System.IO;
 
 namespace Multi_Binary.Converters
 {
@@ -54,7 +55,19 @@ namespace Multi_Binary.Converters
 
             return rays;
         }
+        /*
+        public void makefile()
+        {
 
+            string filename = @"C:\\Users\\user\\Source\\Repos\\Multi-binaria\\Multi-Binary\\Multi-Binary\\bin\\Table.txt";
+
+            List<string> lines = new List<string>();
+            lines.Add(A);
+
+
+
+        }
+        */
 
 
 
