@@ -21,7 +21,7 @@ namespace Multi_Binary
 
         }
 
-        int rows = 4, col = 4;
+        string rows, col;
         
 
         public Form1()
@@ -34,6 +34,7 @@ namespace Multi_Binary
             Reader t = new Reader();
             Writer w = new Writer();
             Bin_conv b = new Bin_conv();
+            the_runner R = new the_runner();
 
             t._Mstr = Mtxt.Text;
             t._Qstr = Qtxt.Text;
@@ -50,7 +51,61 @@ namespace Multi_Binary
             r1c1.Text = A;
             r1c3.Text = Q1;
 
+         
+
+
+
+            //separar a Q
+           string temp = w.separate(Q).ToString();
+           
+            if(temp == Q1)
+            {
+               //nothing
+            }
+            else
+            {
+                if(temp == "1")
+                {
+                    //restando
+                    M= b.Comp2(M);
+                    A=w.adding(M, A);
+                }
+                else
+                {
+                    //sumando
+                    A= w.adding(M, A);
+                }
+            }
+            char timp =w.separate(A);
+            w.slide(A, '0');
+
+            char qone =w.separate(Q);
+            w.slide(A, timp);
+
+            Q1 = qone.ToString();
+
+
+
+            /*
             
+            for(int T =1; T<=4;T++)
+            {
+                for(int j =1;j<=6;j++)
+                {
+                    string name =R.timer(T, j);
+                    RichTextBox txtBox = (RichTextBox)this.Controls.Find(name, true)[0];
+
+                    txtBox.Text = j == 1 ? A : j == 2 ? Q : j == 3 ? Q1 : j == 4 ? M : j == 5 ? "(+/-)" : "";
+
+
+                }
+                
+
+
+
+            }
+            */
+           
             
              
 

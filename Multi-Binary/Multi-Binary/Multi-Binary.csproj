@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Admins\Bin-conv.cs" />
     <Compile Include="Admins\Reader.cs" />
+    <Compile Include="Admins\the runner.cs" />
     <Compile Include="Converters\Add-Sub.cs" />
     <Compile Include="Converters\scootch.cs" />
     <Compile Include="Converters\Sept.cs" />
