@@ -9,7 +9,11 @@ namespace Multi_Binary.Admins
     class Bin_conv
     {
         private string str;
+        private string str2;
         private char[] arr;
+
+
+        //con vierte un numero en forma string ( 0-15) a una serie de binarios;
         public string binario(string value)
         {
 
@@ -38,16 +42,44 @@ namespace Multi_Binary.Admins
             return str;
         }   
 
-        public string binario-comp2(string loe)
+        //despues de ser convertido en binario, este metodo lo transforma en complemento2;
+        public string Comp2 (string valor)
         {
-
-            return loe;
-            
+            char[] charArr = valor.ToCharArray();
+            Array.Reverse(charArr);
+            bool convert = false;                   
+            for(int i = 0; i < charArr.Length; i++)
+            {
+                           
+                if (convert ==true)
+                {
+                    switch(charArr[i])
+                    {
+                        case '1':
+                            charArr[i] = '0';
+                            break;
+                        case '0':
+                            charArr[i] = '1';
+                            break;
+                    }
+                    
+                }
+                if (charArr[i] == '1'  )
+                {
+                    convert = true;             
+                }
+            }
+            Array.Reverse(charArr);
+            str2 = new string(charArr);
+            return str2;           
         }
-        
-        
 
-
-
+        //elimina el " - " de un numero, para usarlo en binario()
+        public string removeneg(string value)
+        {
+            string Value;
+            Value =value.Trim('-');
+            return Value;
+        }              
     }
 }

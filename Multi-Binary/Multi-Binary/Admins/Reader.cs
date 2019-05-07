@@ -21,13 +21,23 @@ namespace Multi_Binary.Admins
             {
                 return _Q;
             }
-            set
+            set // establece el valor de _Q, depende de si value es negativo o no;
             {
-               _Q = bin.binario(value);
-                if( _Q.Contains("-"))
+               
+                string b;      
+                
+                //que pasa si es negativa
+                if ( value.Contains("-"))//this is before conversion to binary
                 {
-                    _Q = bin.bin-comp2(value);
+                    _Q = bin.removeneg(value);
+                    b= bin.binario(_Q);
+                    _Q = bin.Comp2(b);                  
                 }
+                else //es normal
+                {
+                    _Q = bin.binario(value);
+                }
+                
             }
         }
 
@@ -39,7 +49,19 @@ namespace Multi_Binary.Admins
             }
             set
             {
-                _M = bin.binario(value);
+                string b;
+
+                //que pasa si es negativa
+                if (value.Contains("-"))//this is before conversion to binary
+                {
+                    _M = bin.removeneg(value);
+                    b = bin.binario(_M);
+                    _M = bin.Comp2(b);
+                }
+                else //es normal
+                {
+                    _M = bin.binario(value);
+                }
             }
         }
 

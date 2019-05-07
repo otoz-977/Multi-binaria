@@ -22,6 +22,7 @@ namespace Multi_Binary
         {
             Reader t = new Reader();
            
+            //calls properties of _Q and _M
             t._Mstr = Mtxt.Text;
             t._Qstr = Qtxt.Text;
 
