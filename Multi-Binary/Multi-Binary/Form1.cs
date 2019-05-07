@@ -21,6 +21,11 @@ namespace Multi_Binary
 
         }
 
+        private void c1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
         string rows, col;
         
 
@@ -56,13 +61,13 @@ namespace Multi_Binary
 
 
 
-            for(int i = 1; i <=4;i++ )
-            {
+           
                 //separar a Q
                 string temp = w.separate(Q).ToString();
 
-                TextBox txtBox = (TextBox)this.Controls.Find("c"+i*4, true)[0];
-                txtBox.Text = temp;
+                
+                c3.Text = temp;
+                c1.Text += A;
                 if (temp == Q1)
                 {
                     //nothing
@@ -87,14 +92,18 @@ namespace Multi_Binary
                 }
                 char timp = w.separate(A);
                 string Am = w.slide(A, '0');
+                c1.Text += "\n";
+                c1.Text += Am;
 
 
+                c2.Text = Q;
                 char qone = w.separate(Q);
                 string Qm = w.slide(A, timp);
-
+                c2.Text = Qm;
                 Q1 = qone.ToString();
+                c3.Text = Q1;
 
-            }
+            
           
 
 

@@ -168,6 +168,7 @@
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(73, 40);
             this.c1.TabIndex = 31;
+            this.c1.TextChanged += new System.EventHandler(this.c1_TextChanged);
             // 
             // c2
             // 
