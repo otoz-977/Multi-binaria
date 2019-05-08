@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Multi_Binary.Admins;
 using Multi_Binary.Converters;
+using System.Data.SqlClient;
 
 namespace Multi_Binary
 {
     public partial class Form1 : Form
     {
-        string M,Q,A,Q1;
+       
 
         private void r5c3_TextChanged(object sender, EventArgs e)
         {
@@ -26,136 +27,196 @@ namespace Multi_Binary
             
         }
 
-        string rows, col;
-        
+        private void Qtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+          
+
+
+
+        }
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        string M, Q, A, Q1;
+        
+
         private void button1_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             Reader t = new Reader();
             Writer w = new Writer();
             Bin_conv b = new Bin_conv();
-            the_runner R = new the_runner();
+            //the_runner R = new the_runner();
 
+            //set the binaries;
             t._Mstr = Mtxt.Text;
             t._Qstr = Qtxt.Text;
-                    
+            //gets them an assigns them to the variabels
             Q = t._Qstr;
             M = t._Mstr;
             A = "0000";
             Q1 = "0";
+            
+            r1c1.Text = A;
             r1c2.Text = t._Qstr;
+            r1c3.Text = Q1;
             r1c4.Text = t._Mstr;
-
             r1c5.Text = " Valores iniciales";
             r1c6.Text = " ciclo";
-            r1c1.Text = A;
-            r1c3.Text = Q1;
 
-         
+            c16.Text = M;
+            c14.Text = M;
+            
+            c15.Text = M;
+            c13.Text = M;
+
+            string tmp,Mtmp;
+            char Atmp;
+            string[] pr = { " sin +/-", "desp","+","-"};
+            
 
 
 
-
-           
-                //separar a Q
-                string temp = w.separate(Q).ToString();
-
-                
-                c3.Text = temp;
-                c1.Text += A;
-                if (temp == Q1)
+            tmp = w.separate(Q).ToString();
+            
+            c9.Text = Q1;
+            if(tmp == Q1)
+            {
+                c17.Text = pr[0];
+            }
+            else
+            {
+                if(tmp =="1")
                 {
-                    //nothing
+                    Mtmp = b.Comp2(M);
+                    A = w.adding(A, Mtmp);
+                    c17.Text = pr[3];
                 }
                 else
                 {
-                    if (temp == "1")
-                    {
-                        //restando
-
-                        M = b.Comp2(M);
-                        A = w.adding(M, A);
-
-                    }
-                    else
-                    {
-                        //sumando
-
-                         A = w.adding(M, A);
-
-                    }
+                    A = w.adding(A, M);
+                    c17.Text = pr[2];
                 }
-                char timp = w.separate(A);
-                string Am = w.slide(A, '0');
-                c1.Text += "\n";
-                c1.Text += Am;
-
-
-                c2.Text = Q;
-                char qone = w.separate(Q);
-                string Qm = w.slide(A, timp);
-                c2.Text = Qm;
-                Q1 = qone.ToString();
-                c3.Text = Q1;
-
-            
-          
-
-
-            //c1.Text = A;
-            //c1.Text += " \n";
-            //w.slide(A, '0');
-           // c1.Text = A;
-
-
-
-
-
-
-
-            /*
-            string filename = @"C:\\Users\\user\\Source\\Repos\\Multi-binaria\\Multi-Binary\\Multi-Binary\\bin\\Table.txt";
-
-            List<string> lines = new List<string>();
-            lines.Add(A);
-            lines.Add(Q);
-            lines.Add(Q1);
-            lines.Add(M);
-           */
-            
-
-
-
-
-            /*
-            
-            for(int T =1; T<=4;T++)
-            {
-                for(int j =1;j<=6;j++)
-                {
-                    string name =R.timer(T, j);
-                    RichTextBox txtBox = (RichTextBox)this.Controls.Find(name, true)[0];
-
-                    txtBox.Text = j == 1 ? A : j == 2 ? Q : j == 3 ? Q1 : j == 4 ? M : j == 5 ? "(+/-)" : "";
-
-
-                }
-                
-
-
-
             }
-            */
+            c1.Text = A;
+            Atmp = w.separate(A);
+            A = w.slide(A, '0');
+            c1.Text += Environment.NewLine + A;
+            c5.Text = Q;
+            Q = w.slide(Q, Atmp);
+            c5.Text += Environment.NewLine + Q;
+            Q1 = tmp;
+            c9.Text += Environment.NewLine + Q1;
+            c17.Text += Environment.NewLine + pr[1];
+            c21.Text = " 1o";
 
 
+            tmp = w.separate(Q).ToString();
 
+            c10.Text = Q1;
+            if (tmp == Q1)
+            {
+                c18.Text = pr[0];
+            }
+            else
+            {
+                if (tmp == "1")
+                {
+                    Mtmp = b.Comp2(M);
+                    A = w.adding(A, Mtmp);
+                    c18.Text = pr[3];
+                }
+                else
+                {
+                    A = w.adding(A, M);
+                    c18.Text = pr[2];
+                }
+            }
+            c2.Text = A;
+            Atmp = w.separate(A);
+            A = w.slide(A, '0');
+            c2.Text += Environment.NewLine + A;
+            c6.Text = Q;
+            Q = w.slide(Q, Atmp);
+            c6.Text += Environment.NewLine + Q;
+            Q1 = tmp;
+            c10.Text += Environment.NewLine + Q1;
+            c18.Text += Environment.NewLine + pr[1];
+            c22.Text = " 2o";
 
+            tmp = w.separate(Q).ToString();
 
+            c11.Text = Q1;
+            if (tmp == Q1)
+            {
+                c19.Text = pr[0];
+            }
+            else
+            {
+                if (tmp == "1")
+                {
+                    Mtmp = b.Comp2(M);
+                    A = w.adding(A, Mtmp);
+                    c19.Text = pr[3];
+                }
+                else
+                {
+                    A = w.adding(A, M);
+                    c19.Text = pr[2];
+                }
+            }
+            c3.Text = A;
+            Atmp = w.separate(A);
+            A = w.slide(A, '0');
+            c3.Text += Environment.NewLine + A;
+            c7.Text = Q;
+            Q = w.slide(Q, Atmp);
+            c7.Text += Environment.NewLine + Q;
+            Q1 = tmp;
+            c11.Text += Environment.NewLine + Q1;
+            c19.Text += Environment.NewLine + pr[1];
+            c23.Text = " 3er";
+
+            tmp = w.separate(Q).ToString();
+
+            c12.Text = Q1;
+            if (tmp == Q1)
+            {
+                c20.Text = pr[0];
+            }
+            else
+            {
+                if (tmp == "1")
+                {
+                    Mtmp = b.Comp2(M);
+                    A = w.adding(A, Mtmp);
+                    c20.Text = pr[3];
+                }
+                else
+                {
+                    A = w.adding(A, M);
+                    c20.Text = pr[2];
+                }
+            }
+            c4.Text = A;
+            Atmp = w.separate(A);
+            A = w.slide(A, '0');
+            c4.Text += Environment.NewLine + A;
+            c8.Text = Q;
+            Q = w.slide(Q, Atmp);
+            c8.Text += Environment.NewLine + Q;
+            Q1 = tmp;
+            c12.Text += Environment.NewLine + Q1;
+            c20.Text += Environment.NewLine + pr[1];
+            c24.Text = " 4o";
 
 
 
@@ -167,5 +228,27 @@ namespace Multi_Binary
         }
 
 
+
+        
+
+
     }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
