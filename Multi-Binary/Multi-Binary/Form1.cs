@@ -46,7 +46,21 @@ namespace Multi_Binary
         }
 
         string M, Q, A, Q1;
-        
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer sp = new System.Media.SoundPlayer(@"C:\\Users\\user\\Source\\Repos\\Multi-binaria\\Multi-Binary\\Multi-Binary\\bin\\NIGHT.wav");
+
+            //sp.PlayLooping();
+
+            sp.Play();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -84,7 +98,7 @@ namespace Multi_Binary
             
 
 
-
+            //1o
             tmp = w.separate(Q).ToString();
             
             c9.Text = Q1;
@@ -118,7 +132,7 @@ namespace Multi_Binary
             c17.Text += Environment.NewLine + pr[1];
             c21.Text = " 1o";
 
-
+            //2o
             tmp = w.separate(Q).ToString();
 
             c10.Text = Q1;
@@ -151,7 +165,7 @@ namespace Multi_Binary
             c10.Text += Environment.NewLine + Q1;
             c18.Text += Environment.NewLine + pr[1];
             c22.Text = " 2o";
-
+            //3er
             tmp = w.separate(Q).ToString();
 
             c11.Text = Q1;
@@ -184,7 +198,7 @@ namespace Multi_Binary
             c11.Text += Environment.NewLine + Q1;
             c19.Text += Environment.NewLine + pr[1];
             c23.Text = " 3er";
-
+            //4o
             tmp = w.separate(Q).ToString();
 
             c12.Text = Q1;

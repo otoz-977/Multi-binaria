@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Admins\Bin-conv.cs" />
     <Compile Include="Admins\Reader.cs" />
-    <Compile Include="Admins\the runner.cs" />
     <Compile Include="Converters\Add-Sub.cs" />
     <Compile Include="Converters\scootch.cs" />
     <Compile Include="Converters\Sept.cs" />
@@ -89,6 +88,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\hitech boi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifmate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NIGHT.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\NIGHT.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
