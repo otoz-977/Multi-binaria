@@ -47,13 +47,11 @@ namespace Multi_Binary.Converters
             char[] tmp = new char[4];
             if(check.Length >=5)
             {
-                
-                for (int k = 0; k < 3; k++)
-                {
-                    tmp[i] = check[i+1];
 
-                }
 
+                Array.Copy(check, 1, tmp, 0, tmp.Length);
+
+               
                 result = new string(tmp);
             }
 
