@@ -40,6 +40,24 @@ namespace Multi_Binary.Converters
                 // Move to next digits
                 i--; j--;
             }
+
+
+            char[] check = result.ToCharArray();
+
+            char[] tmp = new char[4];
+            if(check.Length >=5)
+            {
+                
+                for (int k = 0; k < 3; k++)
+                {
+                    tmp[i] = check[i+1];
+
+                }
+
+                result = new string(tmp);
+            }
+
+
             return result;
         }
     }
